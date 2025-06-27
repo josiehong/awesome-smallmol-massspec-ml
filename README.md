@@ -185,6 +185,7 @@ According to the information embedded in the model, the molecular representation
 
 ### Mass spectra representation learning and matching
 
+- [Nat. Biotechnol. 2025] [DreaMS] Bushuiev, Roman, et al. [Self-supervised learning of molecular representations from millions of tandem mass spectra using DreaMS](https://www.nature.com/articles/s41587-025-02663-3) [\[code\]](https://github.com/pluskal-lab/DreaMS)
 - [Anal. Chem. 2023] [CLERMS] Guo, Hao, et al. [Contrastive learning-based embedder for the representation of tandem mass spectra](https://pubs.acs.org/doi/abs/10.1021/acs.analchem.3c00260) [\[code\]](https://github.com/HaldamirS/CLERMS)
 - [Nat. Commun 2023] [FastEI] Yang, Qiong, et al. [Ultra-fast and accurate electron ionization mass spectrum matching for compound identification with million-scale in-silico library](https://www.nature.com/articles/s41467-023-39279-7) [\[code\]](https://github.com/Qiong-Yang/FastEI)
 - [PLoS Comput. Biol. 2021] Huber, Florian, et al. [Spec2Vec: Improved mass spectral similarity scoring through learning of structural relationships](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1008724) [\[code\]](https://github.com/iomega/spec2vec) 
