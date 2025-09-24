@@ -193,8 +193,9 @@ According to the information embedded in the model, the molecular representation
 - [J. Cheminform. 2021] Huber, Florian, et al. [MS2DeepScore: a novel deep learning similarity measure to compare tandem mass spectra](https://jcheminf.biomedcentral.com/articles/10.1186/s13321-021-00558-4) [\[code\]](https://github.com/matchms/ms2deepscore)
 - [Anal. Chem. 2019] [DeepMASS] Ji, Hongchao, et al. [Deep MS/MS-aided structural-similarity scoring for unknown metabolite identification](https://pubs.acs.org/doi/10.1021/acs.analchem.8b05405) [\[code\]](https://github.com/hcji/DeepMASS)
 
-### Chemical formula prediction from mass spectra
+### Chemical formula/structure prediction from mass spectra
 
+- [Nat. Commun 2025] [MetDNA3] Zhang, Haosong, et al. [Knowledge and data-driven two-layer networking for accurate metabolite annotation in untargeted metabolomics](https://www-nature-com.proxyiub.uits.iu.edu/articles/s41467-025-63536-6) [\[code\]](https://github.com/ZhuMetLab/MrnAnnoAlgo3) 
 - [JCIM 2023] Goldman, Samuel, et al. [MIST-CF: Chemical formula inference from tandem mass spectra](https://pubs.acs.org/doi/full/10.1021/acs.jcim.3c01082) [\[code\]](https://github.com/samgoldman97/mist-cf)
 - [Nat. Methods 2023] [BUDDY] Xing, Shipei, et al. [BUDDY: molecular formula discovery via bottom-up MS/MS interrogation](https://www.nature.com/articles/s41592-023-01850-x) [\[code1\]](https://github.com/Philipbear/msbuddy) [\[code2\]](https://github.com/Philipbear/BUDDY_Metabolomics) 
 - [Nat. Methods 2019] [SIRIUS 4] Dührkop, Kai, et al. [SIRIUS 4: a rapid tool for turning tandem mass spectra into metabolite structure information](https://www.nature.com/articles/s41592-019-0344-8) [\[code\]](https://github.com/boecker-lab/sirius)
