@@ -195,6 +195,7 @@ According to the information embedded in the model, the molecular representation
 
 ### Chemical formula/structure prediction from mass spectra
 
+- [Nat. Commun 2025] [FIDDLE] Hong, Yuhui, et al. [FIDDLE: a deep learning method for chemical formulas prediction from tandem mass spectra](https://www.nature.com/articles/s41467-025-66060-9) [\[code\]](https://github.com/josiehong/FIDDLE)
 - [Nat. Commun 2025] [MetDNA3] Zhang, Haosong, et al. [Knowledge and data-driven two-layer networking for accurate metabolite annotation in untargeted metabolomics](https://www-nature-com.proxyiub.uits.iu.edu/articles/s41467-025-63536-6) [\[code\]](https://github.com/ZhuMetLab/MrnAnnoAlgo3) 
 - [JCIM 2023] Goldman, Samuel, et al. [MIST-CF: Chemical formula inference from tandem mass spectra](https://pubs.acs.org/doi/full/10.1021/acs.jcim.3c01082) [\[code\]](https://github.com/samgoldman97/mist-cf)
 - [Nat. Methods 2023] [BUDDY] Xing, Shipei, et al. [BUDDY: molecular formula discovery via bottom-up MS/MS interrogation](https://www.nature.com/articles/s41592-023-01850-x) [\[code1\]](https://github.com/Philipbear/msbuddy) [\[code2\]](https://github.com/Philipbear/BUDDY_Metabolomics) 
