@@ -43,41 +43,41 @@ Keep updating the awesome machine-learning papers and codes related to small mol
 
 **Molecular properties (background)**: <a id="data-molecular-prop"></a>
 
-| Database | No. of Compounds | Note |
-|----------|-----------|------|
-| [OC20 & OC22](https://opencatalystproject.org/) | 1.3 million molecular relaxations (from 260 million DFT calculations) | The Open Catalyst Project focuses on using AI to find new renewable energy storage catalysts |
-| [QM9](https://www.nature.com/articles/sdata201422) | 134,000 | Stable small organic molecules composed of CHONF with computed geometric, energetic, electronic, and thermodynamic properties |
-| [GEOM](https://nature.com/articles/s41597-022-01288-4) | 37 million conformations for 450,000+ molecules | Generated using advanced sampling and semi-empirical density functional theory (DFT) |
-| [MD17 & MD22](http://www.sgdml.org/) | 7 biomolecular systems (42-370 atoms each) | Molecular dynamics trajectories sampled at 400-500 K with 1 fs resolution, energy and forces calculated using PBE+MBD theory |
-| [PCQM4Mv2](https://ogb.stanford.edu/docs/lsc/pcqm4mv2/) | Not specified (derived from PubChemQC) | Focuses on predicting DFT-calculated HOMO-LUMO energy gaps of molecules using 2D graphs |
-| [MoleculeNet](https://moleculenet.org/) | 700,000+ | Benchmark for testing machine learning methods on molecular properties, integrated into the DeepChem package |
+| Database | Size | Note |
+|----------|------|------|
+| [OC20 & OC22](https://opencatalystproject.org/) | 1.3M relaxations (260M DFT calculations) | Benchmark for AI-driven catalyst discovery with DFT-computed energies and forces for surface–adsorbate systems |
+| [QM9](https://www.nature.com/articles/sdata201422) | 134,000 molecules | Geometric, energetic, electronic, and thermodynamic properties of stable CHONF small molecules |
+| [GEOM](https://nature.com/articles/s41597-022-01288-4) | 450,000+ molecules (37M conformations) | Conformational ensembles generated via advanced sampling and semi-empirical DFT |
+| [MD17 & MD22](http://www.sgdml.org/) | 7 biomolecular systems (42–370 atoms) | Molecular dynamics trajectories with PBE+MBD energies and forces, sampled at 400–500 K |
+| [PCQM4Mv2](https://ogb.stanford.edu/docs/lsc/pcqm4mv2/) | ~3.7M molecules | Benchmark for HOMO-LUMO gap prediction derived from PubChemQC |
+| [MoleculeNet](https://moleculenet.org/) | 700,000+ molecules | Benchmark suite for molecular property prediction, integrated into DeepChem |
 
 **MS/MS**: <a id="data-molecular-msms"></a>
 
-| Database | No. of Compounds | Note |
-|----------|-----------|------|
-| [MassSpecGym](https://github.com/pluskal-lab/MassSpecGym) | 19K molecules (231K MS/MS spectra) | Benchmark for discovery and identification of molecules with high-quality MS/MS spectra |
-| [NIST23](https://www.sisweb.com/software/nist-msms.htm) | 399,267 small molecules (2,374,064 MS/MS spectra) | Collection of MS/MS spectra and search software |
-| [MoNA](https://mona.fiehnlab.ucdavis.edu/) | 2,061,612 mass spectral records | Contains experimental and in-silico libraries, as well as user contributions |
-| [GNPS](https://gnps.ucsd.edu/ProteoSAFe/static/gnps-splash.jsp) | Not specified | Web-based mass spectrometry ecosystem for community-wide organization and sharing of MS/MS data |
-| [HMDB 5.0](https://hmdb.ca/downloads) | 220,945 metabolite entries | Human Metabolome Database containing metabolites present in the human body and their experimental MS/MS spectra |
+| Database | Size | Note |
+|----------|------|------|
+| [MassSpecGym](https://github.com/pluskal-lab/MassSpecGym) | 19K molecules (231K spectra) | Benchmark for MS/MS-based molecular discovery and identification |
+| [NIST23](https://www.sisweb.com/software/nist-msms.htm) | 399,267 molecules (2,374,064 spectra) | Curated MS/MS spectral library with search software |
+| [MoNA](https://mona.fiehnlab.ucdavis.edu/) | 2,061,612 spectral records | Open-access repository of experimental, in-silico, and user-contributed mass spectra |
+| [GNPS](https://gnps.ucsd.edu/ProteoSAFe/static/gnps-splash.jsp) | Community-curated | Web-based platform for community-wide sharing, organization, and analysis of MS/MS data |
+| [HMDB 5.0](https://hmdb.ca/downloads) | 220,945 metabolite entries | Human Metabolome Database with experimental MS/MS spectra for endogenous metabolites |
 
 **Retention time**: <a id="data-molecular-rt"></a>
 
-| Database | No. of Compounds | Note |
-|----------|-----------|------|
-| [METLIN-SMRT](https://www.nature.com/articles/s41467-019-13680-7) | 80,038 small molecules | Experimentally acquired reverse-phase chromatography retention time dataset |
-| [RepoRT](https://chemrxiv.org/engage/chemrxiv/article-details/64a5a08c9ea64cc1677e120f) | 8,809 unique compounds (88,325 retention time entries) | Contains 373 datasets measured on 49 different chromatographic columns using various eluents, flow rates, and temperatures |
-| [HSM3](https://www.sciencedirect.com/science/article/pii/S0021967324005016) | 75 compounds (43,329 total retention measurements) | Refined hydrophobic subtraction model for predicting reversed-phase liquid chromatography selectivity, based on 13 RP stationary phases with measurements at multiple mobile phase compositions |
+| Database | Size | Note |
+|----------|------|------|
+| [METLIN-SMRT](https://www.nature.com/articles/s41467-019-13680-7) | 80,038 molecules | Experimental reverse-phase chromatography retention times for small molecules |
+| [RepoRT](https://chemrxiv.org/engage/chemrxiv/article-details/64a5a08c9ea64cc1677e120f) | 8,809 molecules (88,325 RT entries) | Multi-column collection spanning 49 chromatographic columns under varied mobile phase conditions |
+| [HSM3](https://www.sciencedirect.com/science/article/pii/S0021967324005016) | 75 compounds (43,329 measurements) | Retention measurements across 13 RP stationary phases for modeling reversed-phase LC selectivity |
 
 **Collision cross section**: <a id="data-molecular-ccs"></a>
 
-| Database | No. of Compounds | Note |
-|----------|-----------|------|
-| [AllCCS](https://www.nature.com/articles/s41467-020-18171-8) | 1.6 million small molecules (5,000+ experimental CCS records, ~12 million calculated CCS values) | Collection of experimental and calculated collision cross section values |
-| [AllCCS2](https://pubs.acs.org/doi/10.1021/acs.analchem.3c02267) | 4,326 compounds (10,384 records, 7,713 unified CCS values added) | Expanded version of AllCCS with newly available experimental CCS data and standardized values with confidence scores |
-| [METLIN-CCS](https://www.nature.com/articles/s41592-023-02078-5) | 27,000+ molecular standards across 79 chemical classes | Database of collision cross section values derived from ion mobility spectrometry data |
-| [CCSBase](https://pubs.acs.org/doi/10.1021/acs.analchem.9b05772) | Not specified | Integrated platform with comprehensive database of CCS measurements from various sources and a machine learning prediction model [Website](https://ccsbase.net/) |
+| Database | Size | Note |
+|----------|------|------|
+| [AllCCS](https://www.nature.com/articles/s41467-020-18171-8) | 1.6M molecules (5,000+ experimental; ~12M calculated CCS values) | Experimental and calculated CCS values for small molecules |
+| [AllCCS2](https://pubs.acs.org/doi/10.1021/acs.analchem.3c02267) | 4,326 molecules (10,384 records) | Expanded AllCCS with standardized CCS values and confidence scores |
+| [METLIN-CCS](https://www.nature.com/articles/s41592-023-02078-5) | 27,000+ standards (79 chemical classes) | CCS values from ion mobility spectrometry across diverse chemical classes |
+| [CCSBase](https://ccsbase.net/) | Not specified | Integrated CCS database from multiple sources with an ML-based prediction model |
 
 ## Papers
 
