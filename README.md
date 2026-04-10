@@ -21,19 +21,19 @@ Keep updating the awesome machine-learning papers and codes related to small mol
     * [Collision cross section](#data-molecular-ccs)
 * [Papers](#papers)
     * [Survey/Review papers](#surveyreview-papers)
-    * [Discussions in databases](#discussions-in-database)
-    * [Discussions in pre-train models](#discussions-in-pre-train-models)
+    * [Discussions in databases](#discussions-in-databases)
     * [Small molecular representation learning](#small-molecular-representation-learning)
         * [Point-based (or quantum-based) methods](#point-based-or-quantum-based-methods)
         * [Graph-based methods](#graph-based-methods)
         * [Sequence-based methods](#sequence-based-methods)
     * [Mass spectrometry-related properties prediction](#ms_prop_prediction)
         * [Tandem mass spectra prediction](#msms-predicton)
-        * [Retention time prediction](#retetntion-time-prediction)
+        * [Retention time prediction](#retention-time-prediction)
         * [Collision cross section prediction](#collision-cross-section-prediction)
     * [Mass spectra representation learning and matching](#mass-spectra-representation-learning-and-matching)
-    * [Chemical formula prediction from mass spectra](#chemical-formula-prediction-from-mass-spectra)
     * [Mass spectra peak annotation/assignment](#mass-spectra-peak-annotationassignment)
+    * [Chemical formula prediction from mass spectra](#chemical-formula-prediction-from-mass-spectra)
+    * [De novo molecular structure elucidation from MS/MS spectra](#de-novo-molecular-structure-elucidation-from-msms-spectra)
 * [Machine learning in small molecules chromatography](#machine-learning-in-small-molecules-chromatography)
 * [Related awesome lists](#related-awesome-lists)
 
@@ -41,7 +41,7 @@ Keep updating the awesome machine-learning papers and codes related to small mol
 
 ## Databases
 
-**Molecular properties**: <a id="data-molecular-prop"></a>
+**Molecular properties (background)**: <a id="data-molecular-prop"></a>
 
 | Database | No. of Compounds | Note |
 |----------|-----------|------|
@@ -64,7 +64,7 @@ Keep updating the awesome machine-learning papers and codes related to small mol
 
 **Retention time**: <a id="data-molecular-rt"></a>
 
-| Database | Compounds | Note |
+| Database | No. of Compounds | Note |
 |----------|-----------|------|
 | [METLIN-SMRT](https://www.nature.com/articles/s41467-019-13680-7) | 80,038 small molecules | Experimentally acquired reverse-phase chromatography retention time dataset |
 | [RepoRT](https://chemrxiv.org/engage/chemrxiv/article-details/64a5a08c9ea64cc1677e120f) | 8,809 unique compounds (88,325 retention time entries) | Contains 373 datasets measured on 49 different chromatographic columns using various eluents, flow rates, and temperatures |
@@ -72,7 +72,7 @@ Keep updating the awesome machine-learning papers and codes related to small mol
 
 **Collision cross section**: <a id="data-molecular-ccs"></a>
 
-| Database | Compounds | Note |
+| Database | No. of Compounds | Note |
 |----------|-----------|------|
 | [AllCCS](https://www.nature.com/articles/s41467-020-18171-8) | 1.6 million small molecules (5,000+ experimental CCS records, ~12 million calculated CCS values) | Collection of experimental and calculated collision cross section values |
 | [AllCCS2](https://pubs.acs.org/doi/10.1021/acs.analchem.3c02267) | 4,326 compounds (10,384 records, 7,713 unified CCS values added) | Expanded version of AllCCS with newly available experimental CCS data and standardized values with confidence scores |
@@ -89,17 +89,14 @@ Keep updating the awesome machine-learning papers and codes related to small mol
 - [Metabolomics 2022] Bittremieux, Wout, Mingxun Wang, and Pieter C. Dorrestein. [The critical role that spectral libraries play in capturing the metabolomics community knowledge](https://link.springer.com/article/10.1007/s11306-022-01947-y)
 - [TrAC 2021] Debus, Bruno, et al. [Deep learning in analytical chemistry](https://www.sciencedirect.com/science/article/pii/S016599362100282X)
 - [J. Cheminform. 2013] Scheubert, Kerstin, et al. [Computational mass spectrometry for small molecules](https://jcheminf.biomedcentral.com/articles/10.1186/1758-2946-5-12)
+- [JCIM 2023] Zhang, Ziqiao, et al. [Can Pre-trained Models Really Learn Better Molecular Representations for AI-aided Drug Discovery?](https://pubs.acs.org/doi/10.1021/acs.jcim.3c01707)
+- [NeurIPS 2022] Sun, Ruoxi, et al. [Does GNN Pretraining Help Molecular Representation?](https://proceedings.neurips.cc/paper_files/paper/2022/hash/4ec360efb3f52643ac43fda570ec0118-Abstract-Conference.html)
 
-### Discussions in database
+### Discussions in databases
 
 - [Nat. Commun 2025] Kretschmer, Fleming, et al. [Coverage bias in small molecule machine learning](https://www.nature.com/articles/s41467-024-55462-w) 
 - [Anal. Chem. 2024] Hoang, Corey, et al. [Tandem Mass Spectrometry across Platforms](https://pubs.acs.org/doi/10.1021/acs.analchem.3c05576)
 - [bioRxiv 2024] Kretschmer, Fleming, et al. [Small molecule machine learning: All models are wrong, some may not even be useful](https://www.biorxiv.org/content/10.1101/2023.03.27.534311v2.abstract)
-
-### Discussions in pre-train models
-
-- [JCIM 2023] Zhang, Ziqiao, et al. [Can Pre-trained Models Really Learn Better Molecular Representations for AI-aided Drug Discovery?](https://pubs.acs.org/doi/10.1021/acs.jcim.3c01707)
-- [NeurIPS 2022] Sun, Ruoxi, et al. [Does GNN Pretraining Help Molecular Representation?](https://proceedings.neurips.cc/paper_files/paper/2022/hash/4ec360efb3f52643ac43fda570ec0118-Abstract-Conference.html)
 
 ### Small molecular representation learning
 
@@ -156,18 +153,18 @@ According to the information embedded in the model, the molecular representation
 
 ### Mass spectrometry-related properties prediction <a id="ms_prop_prediction"></a>
 
-**Tandem mass spectra prediction predicton** <a id="msms-predicton"></a>
+**Tandem mass spectra prediction** <a id="msms-predicton"></a>
 
 - [Anal. Chem. 2024] [PPGB_MS2] Zheng, Fujian, et al. [Predicting Tandem Mass Spectra of Small Molecules Using Graph Embedding of Precursor-Product Ion Pair Graph](https://pubs.acs.org/doi/full/10.1021/acs.analchem.4c04375) [\[code\]](https://github.com/zhengfj1994/PPGB_MS2)
+- [Nat. Mach. Intell. 2024] Young, Adamo, et al. [Tandem mass spectrum prediction for small molecules using graph transformers](https://arxiv.org/abs/2111.04824) [\[code\]](https://github.com/Roestlab/massformer)
 - [Anal. Chem. 2023] Wang, Fei, et al. [Deep Learning-Enabled MS/MS Spectrum Prediction Facilitates Automated Identification Of Novel Psychoactive Substances](https://pubs.acs.org/doi/10.1021/acs.analchem.3c02413) [\[code\]](https://nps-ms.ca/users/sign_in)
 - [Nat. Mach. Intell. 2023] Goldman, Samuel, et al. [Annotating metabolite mass spectra with domain-inspired chemical formula transformers](https://www.nature.com/articles/s42256-023-00708-3) [\[code\]](https://github.com/samgoldman97/mist)
-- [Nat. Mach. Intell. 2024] Young, Adamo, et al. [Tandem mass spectrum prediction for small molecules using graph transformers](https://arxiv.org/abs/2111.04824) [\[code\]](https://github.com/Roestlab/massformer) 
 - [NeurIPS 2023] Goldman, Samuel, et al. [Prefix-tree decoding for predicting mass spectra from molecules](https://arxiv.org/abs/2303.06470) [\[code\]](https://github.com/samgoldman97/ms-pred)
 - [Bioinformatics 2023] Hong, Yuhui, et al. [3DMolMS: prediction of tandem mass spectra from 3D molecular conformations](https://academic.oup.com/bioinformatics/article/39/6/btad354/7186501) [\[code\]](https://github.com/JosieHong/3DMolMS)
 - [Anal. Chem. 2021] Wang, Fei, et al. [CFM-ID 4.0: more accurate ESI-MS/MS spectral prediction and compound identification](https://pubs.acs.org/doi/full/10.1021/acs.analchem.1c01465) [\[code\]](https://hub.docker.com/r/wishartlab/cfmid)
 - [ACS Cent. Sci. 2019] Wei, Jennifer N., et al. [Rapid prediction of electron–ionization mass spectrometry using neural networks](https://pubs.acs.org/doi/full/10.1021/acscentsci.9b00085) [\[code\]](https://github.com/brain-research/deep-molecular-massspec)
 
-**Retention time prediction** <a id="retetntion-time-prediction"></a>
+**Retention time prediction** <a id="retention-time-prediction"></a>
 
 - [Bioinformatics 2024] [RT-Transformer] Xue, Jun, et al. [RT-Transformer: Retention time prediction for metabolite annotation to assist in metabolite identification](https://academic.oup.com/bioinformatics/article/40/3/btae084/7613958) [\[code\]](https://github.com/01dadada/RT-Transformer)
 - [J. Chromatogr. A 2023] [DeepGCN-RT] Kang, Qiyue, et al. [Deep graph convolutional network for small-molecule retention time prediction](https://www.sciencedirect.com/science/article/pii/S0021967323006647) [\[code\]](https://github.com/kangqiyue/DeepGCN-RT)
@@ -193,19 +190,26 @@ According to the information embedded in the model, the molecular representation
 - [J. Cheminform. 2021] Huber, Florian, et al. [MS2DeepScore: a novel deep learning similarity measure to compare tandem mass spectra](https://jcheminf.biomedcentral.com/articles/10.1186/s13321-021-00558-4) [\[code\]](https://github.com/matchms/ms2deepscore)
 - [Anal. Chem. 2019] [DeepMASS] Ji, Hongchao, et al. [Deep MS/MS-aided structural-similarity scoring for unknown metabolite identification](https://pubs.acs.org/doi/10.1021/acs.analchem.8b05405) [\[code\]](https://github.com/hcji/DeepMASS)
 
-### Chemical formula/structure prediction from mass spectra
-
-- [Nat. Commun 2025] [FIDDLE] Hong, Yuhui, et al. [FIDDLE: a deep learning method for chemical formulas prediction from tandem mass spectra](https://www.nature.com/articles/s41467-025-66060-9) [\[code\]](https://github.com/josiehong/FIDDLE)
-- [Nat. Commun 2025] [MetDNA3] Zhang, Haosong, et al. [Knowledge and data-driven two-layer networking for accurate metabolite annotation in untargeted metabolomics](https://www-nature-com.proxyiub.uits.iu.edu/articles/s41467-025-63536-6) [\[code\]](https://github.com/ZhuMetLab/MrnAnnoAlgo3) 
-- [JCIM 2023] Goldman, Samuel, et al. [MIST-CF: Chemical formula inference from tandem mass spectra](https://pubs.acs.org/doi/full/10.1021/acs.jcim.3c01082) [\[code\]](https://github.com/samgoldman97/mist-cf)
-- [Nat. Methods 2023] [BUDDY] Xing, Shipei, et al. [BUDDY: molecular formula discovery via bottom-up MS/MS interrogation](https://www.nature.com/articles/s41592-023-01850-x) [\[code1\]](https://github.com/Philipbear/msbuddy) [\[code2\]](https://github.com/Philipbear/BUDDY_Metabolomics) 
-- [Nat. Methods 2019] [SIRIUS 4] Dührkop, Kai, et al. [SIRIUS 4: a rapid tool for turning tandem mass spectra into metabolite structure information](https://www.nature.com/articles/s41592-019-0344-8) [\[code\]](https://github.com/boecker-lab/sirius)
-
 ### Mass spectra peak annotation/assignment
 
 - [J. Cheminform. 2016] Ruttkies, Christoph, et al. [MetFrag relaunched: incorporating strategies beyond in silico fragmentation](https://link.springer.com/article/10.1186/S13321-016-0115-9) [\[website\]](https://ipb-halle.github.io/MetFrag/)
 - [Anal. Chem. 2014] Ma, Yan, et al. [MS2Analyzer: A software for small molecule substructure annotations from accurate tandem mass spectra](https://pubs.acs.org/doi/full/10.1021/ac502818e) [\[website\]](https://fiehnlab.ucdavis.edu/projects/MS2Analyzer/)
 - [Nucleic Acids Res. 2014] Allen, Felicity, et al. [CFM-ID: a web server for annotation, spectrum prediction and metabolite identification from tandem mass spectra](https://academic.oup.com/nar/article/42/W1/W94/2437594) [\[website\]](https://cfmid.wishartlab.com/) *CFM-ID is designed for three tasks: spectrum prediction, peak assignment, and compound identification.*
+
+### Chemical formula prediction from mass spectra
+
+- [Nat. Commun 2025] [FIDDLE] Hong, Yuhui, et al. [FIDDLE: a deep learning method for chemical formulas prediction from tandem mass spectra](https://www.nature.com/articles/s41467-025-66060-9) [\[code\]](https://github.com/josiehong/FIDDLE)
+- [Nat. Commun 2025] [MetDNA3] Zhang, Haosong, et al. [Knowledge and data-driven two-layer networking for accurate metabolite annotation in untargeted metabolomics](https://www.nature.com/articles/s41467-025-63536-6) [\[code\]](https://github.com/ZhuMetLab/MrnAnnoAlgo3) 
+- [JCIM 2023] Goldman, Samuel, et al. [MIST-CF: Chemical formula inference from tandem mass spectra](https://pubs.acs.org/doi/full/10.1021/acs.jcim.3c01082) [\[code\]](https://github.com/samgoldman97/mist-cf)
+- [Nat. Methods 2023] [BUDDY] Xing, Shipei, et al. [BUDDY: molecular formula discovery via bottom-up MS/MS interrogation](https://www.nature.com/articles/s41592-023-01850-x) [\[code1\]](https://github.com/Philipbear/msbuddy) [\[code2\]](https://github.com/Philipbear/BUDDY_Metabolomics) 
+- [Nat. Methods 2019] [SIRIUS 4] Dührkop, Kai, et al. [SIRIUS 4: a rapid tool for turning tandem mass spectra into metabolite structure information](https://www.nature.com/articles/s41592-019-0344-8) [\[code\]](https://github.com/boecker-lab/sirius)
+
+### De novo molecular structure elucidation from MS/MS spectra <a id="de-novo-molecular-structure-elucidation-from-msms-spectra"></a>
+
+- [ICLR 2026] [FlowMS] Nie, Jianan, et al. [FlowMS: Flow Matching for De Novo Structure Elucidation from Mass Spectra](https://arxiv.org/abs/2603.18397)
+- [NeurIPS 2025] [MS-BART] Han, Yang, et al. [MS-BART: Unified Modeling of Mass Spectra and Molecules for Structure Elucidation](https://arxiv.org/abs/2510.20615) [\[code\]](https://github.com/OpenDFM/MS-BART)
+- [ICML 2025] [DiffMS] Bohde, Marshall, et al. [DiffMS: Diffusion Generation of Molecules Conditioned on Mass Spectra](https://proceedings.mlr.press/v267/bohde25a.html) [\[code\]](https://github.com/coleygroup/DiffMS)
+- [Nat. Methods 2022] [MSNovelist] Stravs, Michael A., et al. [MSNovelist: de novo structure generation from mass spectra](https://www.nature.com/articles/s41592-022-01486-3) [\[code\]](https://github.com/meowcat/MSNovelist)
 
 ## Machine learning in small molecules chromatography
 
@@ -220,7 +224,7 @@ According to the information embedded in the model, the molecular representation
 
 ## Related awesome lists
 
-- [Awsome Mass Spectra Libraries](https://github.com/merlin-ms/awesome-mass-spectral-libraries): This repository contains the latest libraries for mass spectral data and related properties. 
+- [Awesome Mass Spectra Libraries](https://github.com/merlin-ms/awesome-mass-spectral-libraries): This repository contains the latest libraries for mass spectral data and related properties. 
 - [Awesome Small Molecule Machine Learning](https://github.com/benb111/awesome-small-molecule-ml): This repository focuses on machine learning topics related to small molecules.
 - [Awesome Cheminformatics](https://github.com/hsiaoyi0504/awesome-cheminformatics): This repository concentrates on computer-based methods in chemistry.
 - [Awesome Python Chemistry](https://github.com/lmmentel/awesome-python-chemistry): This repository is dedicated to Python-based frameworks, libraries, software, and resources in the field of Chemistry.
