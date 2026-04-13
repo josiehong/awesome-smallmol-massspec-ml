@@ -62,6 +62,14 @@ Keep updating the awesome machine-learning papers and codes related to small mol
 | [GNPS](https://gnps.ucsd.edu/ProteoSAFe/static/gnps-splash.jsp) | Community-curated | Web-based platform for community-wide sharing, organization, and analysis of MS/MS data |
 | [HMDB 5.0](https://hmdb.ca/downloads) | 220,945 metabolite entries | Human Metabolome Database with experimental MS/MS spectra for endogenous metabolites |
 
+**EAD MS/MS**: <a id="data-molecular-ead"></a>
+
+| Database | Size | Note |
+|----------|------|------|
+| [CIeaD](https://pubs-acs-org.proxyiub.uits.iu.edu/doi/10.1021/jasms.5c00329) | 2,305 phytochemicals (13,887 spectra) | Complementary CID and EAD spectra for phytochemicals at multiple collision energies |
+| [MultiMS2](https://github.com/zamboni-lab/MultiMS2) | N/A | Multi-modal MS2 spectra across fragmentation modes (CID, EAD, EID) and collision energies |
+| [MS-DIAL 5](https://www-nature-com.proxyiub.uits.iu.edu/articles/s41467-024-54137-w) | 716 small molecules, 65 lipids | EAD spectral library for lipids enabling structural characterization of isomers |
+
 **Retention time**: <a id="data-molecular-rt"></a>
 
 | Database | Size | Note |
@@ -78,6 +86,7 @@ Keep updating the awesome machine-learning papers and codes related to small mol
 | [AllCCS2](https://pubs.acs.org/doi/10.1021/acs.analchem.3c02267) | 4,326 molecules (10,384 records) | Expanded AllCCS with standardized CCS values and confidence scores |
 | [METLIN-CCS](https://www.nature.com/articles/s41592-023-02078-5) | 27,000+ standards (79 chemical classes) | CCS values from ion mobility spectrometry across diverse chemical classes |
 | [CCSBase](https://ccsbase.net/) | Not specified | Integrated CCS database from multiple sources with an ML-based prediction model |
+
 
 ## Papers
 
