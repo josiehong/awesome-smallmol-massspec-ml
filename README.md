@@ -164,6 +164,7 @@ According to the information embedded in the model, the molecular representation
 
 **Tandem mass spectra prediction** <a id="msms-predicton"></a>
 
+- [Nat. Commun 2025] [FIORA] Nowatzky, Yannek, et al. [FIORA: Local neighborhood-based prediction of compound mass spectra from single fragmentation events](https://doi.org/10.1038/s41467-025-57422-4) [\[code\]](https://github.com/BAMeScience/fiora)
 - [Anal. Chem. 2024] [PPGB_MS2] Zheng, Fujian, et al. [Predicting Tandem Mass Spectra of Small Molecules Using Graph Embedding of Precursor-Product Ion Pair Graph](https://pubs.acs.org/doi/full/10.1021/acs.analchem.4c04375) [\[code\]](https://github.com/zhengfj1994/PPGB_MS2)
 - [Nat. Mach. Intell. 2024] Young, Adamo, et al. [Tandem mass spectrum prediction for small molecules using graph transformers](https://arxiv.org/abs/2111.04824) [\[code\]](https://github.com/Roestlab/massformer)
 - [Anal. Chem. 2023] Wang, Fei, et al. [Deep Learning-Enabled MS/MS Spectrum Prediction Facilitates Automated Identification Of Novel Psychoactive Substances](https://pubs.acs.org/doi/10.1021/acs.analchem.3c02413) [\[code\]](https://nps-ms.ca/users/sign_in)
